@@ -74,7 +74,7 @@ class DateTimeController extends Controller
                 $gaps =  $firstDateInCarbon->diffInMinutes($secondDateInCarbon, true);
                 $result = 'About ' . $gaps . ($gaps > 1 ? ' minutes': ' minute') . ' between these two dates';
             } else if ($convert == 'hours') {
-                $gaps =  $firstDateInCarbon->diffInMonths($secondDateInCarbon, true);
+                $gaps =  $firstDateInCarbon->diffInHours($secondDateInCarbon, true);
                 $result = 'About ' . $gaps . ($gaps > 1 ? ' hours': ' hour') . ' between these two dates';
             } else if ($convert == 'years') {
                 $gaps =  $firstDateInCarbon->diffInYears($secondDateInCarbon, true);
