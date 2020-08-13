@@ -14,3 +14,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group(['prefix' => 'api'], function($router){
+    $router->get('DateTimeAPI/{mode}','dateTimeController@handleData'); //mode type: 1 show Days between two numbers; 2 show numbers of weekdays; 3 show number of comlete weeks; 4 timezone
+});
