@@ -21,30 +21,22 @@ class DateTimeController extends Controller
             return response()->json($message);
         } //validation
 
-        function check_date($input){// check if an input is a valid date
-            if(date('Y-m-d H:i:s', strtotime($input)) ==  $input) {
-                return 1; //is a valid date
-            } else {
-                return 0; //not a valid date
-            }
-        }
-
         if(isset($request->firstDate)){
             $firstDate =  urldecode($request->firstDate);//get correct format of input
-            $test = check_date($firstDate);
-            if($test === 0) {
+            if (date('Y-m-d H:i:s', strtotime($firstDate)) == $firstDate) {
+                $firstDateInCarbon = Carbon::createFromDate($firstDate);
+            } else {
                 return response()->json('First Date is not valid');
             }
-            $firstDateInCarbon = Carbon::createFromDate($firstDate);
         }
 
         if(isset($request->secondDate)){
             $secondDate =  urldecode($request->secondDate);//get correct format of input
-            $test = check_date($secondDate);
-            if($test === 0) {
+            if (date('Y-m-d H:i:s', strtotime($secondDate)) == $secondDate) {
+                $secondDateInCarbon = Carbon::createFromDate($secondDate);
+            } else {
                 return response()->json('Second Date is not valid');
             }
-            $secondDateInCarbon = Carbon::createFromDate($secondDate);
         }
 
         if($mode === '1'){
@@ -80,7 +72,7 @@ class DateTimeController extends Controller
                 $gaps =  $firstDateInCarbon->diffInYears($secondDateInCarbon, true);
                 $result = 'About ' . $gaps . ($gaps > 1 ? ' years': ' year') . ' between these two dates';
             } else {
-                $result = 'Convert type is not correct. Please choose from "second, minutes, hours, years"';
+                $result = 'Convert type is not correct. Please choose from second, minutes, hours, years';
             }
         }
         return response()->json($result);
