@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/DateTimeAPI/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/auth" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/broadcasting" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/bus" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/config" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/console" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/container" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/database" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/encryption" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/events" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/hashing" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/http" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/log" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/pagination" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/pipeline" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/queue" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/session" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/support" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/testing" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/validation" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/illuminate/view" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/laravel/lumen-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/nikic/fast-route" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/opis/closure" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/paragonie/random_compat" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-php70" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/DateTimeAPI/vendor/voku/portable-ascii" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
