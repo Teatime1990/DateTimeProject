@@ -15,8 +15,6 @@ class DateTimeController extends Controller
         //
     }
 
-
-
     public function handleData(Request $request, $mode) { //main function to deal with data from client side
         if((!isset($request->firstDate) || !isset($request->secondDate)) && !isset($request->timezone)){
             $message = 'Lack of parameter';
@@ -40,7 +38,6 @@ class DateTimeController extends Controller
             $firstDateInCarbon = Carbon::createFromDate($firstDate);
         }
 
-
         if(isset($request->secondDate)){
             $secondDate =  urldecode($request->secondDate);//get correct format of input
             $test = check_date($secondDate);
@@ -54,29 +51,25 @@ class DateTimeController extends Controller
             $convert = $request->convert;
         }
 
-
         if($mode === '1'){
             // find out the number of days between two datetime
             $days = $firstDateInCarbon->diffInDays($secondDateInCarbon, true);
             $result = 'About ' . $days . ($days > 1 ? ' days': ' day') . ' between these two dates';
             return response()->json($result);
-
         } else if ($mode === '2') {
             //find out the number of weekdays between two datetime
-
+            $days = $firstDateInCarbon->diffInWeekdays($secondDateInCarbon, true);
+            $result = 'About ' . $days . ($days > 1 ? ' weekdays': ' weekday') . ' between these two dates';
+            return response()->json($result);
         } else if ($mode === '3') {
             //find out the number of complete weeks between two datetime
-
+            $weeks = $firstDateInCarbon->diffInWeeks($secondDateInCarbon, true);
+            $result = 'About ' . $weeks . ($weeks > 1 ? ' complete weeks': ' complete week') . ' between these two dates';
+            return response()->json($result);
         } else if ($mode === '4') {
             //Allow the specification of a timezone for comparison of input parameters from
             //different timezones.
 
         }
-
-
     }
-
-
-
-    //
 }
