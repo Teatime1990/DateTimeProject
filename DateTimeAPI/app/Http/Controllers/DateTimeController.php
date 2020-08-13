@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class DateTimeController extends Controller
 {
@@ -36,6 +37,7 @@ class DateTimeController extends Controller
             if($test === 0) {
                 return response()->json('First Date is not valid');
             }
+            $firstDateInCarbon = Carbon::createFromDate($firstDate);
         }
 
 
@@ -45,6 +47,7 @@ class DateTimeController extends Controller
             if($test === 0) {
                 return response()->json('Second Date is not valid');
             }
+            $secondDateInCarbon = Carbon::createFromDate($secondDate);
         }
 
         if(isset($request->convert)){
@@ -54,11 +57,8 @@ class DateTimeController extends Controller
 
         if($mode === '1'){
             // find out the number of days between two datetime
-
-            $days = round((strtotime($firstDate) - (strtotime($secondDate)) )/ 3600 / 24);
-
-            $result = 'About ' . abs($days) . (abs($days) > 1 ? ' days': ' day') . ' between these two dates';
-
+            $days = $firstDateInCarbon->diffInDays($secondDateInCarbon, true);
+            $result = 'About ' . $days . ($days > 1 ? ' days': ' day') . ' between these two dates';
             return response()->json($result);
 
         } else if ($mode === '2') {
