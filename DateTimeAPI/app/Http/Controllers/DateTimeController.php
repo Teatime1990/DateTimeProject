@@ -17,6 +17,11 @@ class DateTimeController extends Controller
 
 
     public function handleData(Request $request, $mode) { //main function to deal with data from client side
+        if((!isset($request->firstDate) || !isset($request->secondDate)) && !isset($request->timezone)){
+            $message = 'Lack of parameter';
+            return response()->json($message);
+        } //validation
+
         function check_date($input){// check if an input is a valid date
             if(date('Y-m-d H:i:s', strtotime($input)) ==  $input) {
                 return 1; //is a valid date
