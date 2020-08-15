@@ -91,7 +91,7 @@ An example1 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firs
 An example2 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firstDate=2020-08-13 12:00:33&secondDate=2020-10-24 23:55:12&convert=years
 
 ## Mode 4
-Return with result of days between datetimes.
+Return with result of days between datetimes in different timezone.
 
 ### Parameter requirement: 
 * firstDate=YYYY-MM-DD HH:MM:SS
