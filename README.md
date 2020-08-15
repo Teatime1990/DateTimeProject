@@ -25,6 +25,13 @@ cd in your project directory
 composer install
 ```
 
+## Define Environment File
+at the root of your project directory
+```
+cp .env.example .env
+```
+configure .env depending on your own environment
+
 ### Compiles locally for development
 ```
 php -S localhost:3000 -t public
