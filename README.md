@@ -31,6 +31,10 @@ at the root of your project directory
 cp .env.example .env
 ```
 configure .env depending on your own environment
+May need the following command to add App_key in env file
+```
+php artisan key:generate
+```
 
 ### Compiles locally for development
 ```
