@@ -63,7 +63,7 @@ An example1 of calling this API in Mode 1: localhost:3000/api/DateTimeAPI/1?firs
 
 An example2 of calling this API in Mode 1: localhost:3000/api/DateTimeAPI/1?firstDate=2020-08-13 12:00:33&secondDate=2020-08-14 23:55:12&convert=seconds
 
-### Deviation
+### Deviation of Mode 1
 The result is rounding in ten decimal places.
 
 ## Mode 2
@@ -75,6 +75,7 @@ Return result of weekdays between datetimes.
 * (Optional) convert=OPTIONS (seoncds,minutes,hours,years)
 
 An example1 of calling this API in Mode 2: localhost:3000/api/DateTimeAPI/2?firstDate=2020-08-13 12:00:33&secondDate=2020-09-14 23:55:12
+
 An example2 of calling this API in Mode 2: localhost:3000/api/DateTimeAPI/2?firstDate=2020-08-13 12:00:33&secondDate=2020-09-14 23:55:12&convert=minutes
 
 ## Mode 3
@@ -86,6 +87,7 @@ Return with result of complete weeks between datetimes.
 * (Optional) convert=OPTIONS (seoncds,minutes,hours,years)
 
 An example1 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firstDate=2020-08-13 12:00:33&secondDate=2020-10-24 23:55:12
+
 An example2 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firstDate=2020-08-13 12:00:33&secondDate=2020-10-24 23:55:12&convert=years
 
 ## Mode 4
