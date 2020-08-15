@@ -30,13 +30,72 @@ at the root of your project directory
 ```
 cp .env.example .env
 ```
-configure .env depending on your own environment
+configure .env depending on your own environment. 
 May need the following command to add App_key in env file
 ```
 php artisan key:generate
 ```
 
-### Compiles locally for development
+## Compiles locally for development
 ```
 php -S localhost:3000 -t public
 ```
+
+## Run Unit Tests
+```
+vendor/bin/phpunit
+```
+
+# API Feature Description (How to use this API)
+Url template to call this API is localhost:3000/api/DateTimeAPI/Modenumber?Parameters
+
+Modenumber is an int from 1 to 4. 
+
+## Mode 1
+Return result of days between datetimes.
+
+### Parameter requirement: 
+* firstDate=YYYY-MM-DD HH:MM:SS
+* secondDate=YYYY-MM-DD HH:MM:SS
+* (Optional) convert=OPTIONS (seoncds,minutes,hours,years)
+
+An example1 of calling this API in Mode 1: localhost:3000/api/DateTimeAPI/1?firstDate=2020-08-13 12:00:33&secondDate=2020-08-14 23:55:12
+
+An example2 of calling this API in Mode 1: localhost:3000/api/DateTimeAPI/1?firstDate=2020-08-13 12:00:33&secondDate=2020-08-14 23:55:12&convert=seconds
+
+### Deviation
+The result is rounding in ten decimal places.
+
+## Mode 2
+Return result of weekdays between datetimes.
+
+### Parameter requirement: 
+* firstDate=YYYY-MM-DD HH:MM:SS
+* secondDate=YYYY-MM-DD HH:MM:SS
+* (Optional) convert=OPTIONS (seoncds,minutes,hours,years)
+
+An example1 of calling this API in Mode 2: localhost:3000/api/DateTimeAPI/2?firstDate=2020-08-13 12:00:33&secondDate=2020-09-14 23:55:12
+An example2 of calling this API in Mode 2: localhost:3000/api/DateTimeAPI/2?firstDate=2020-08-13 12:00:33&secondDate=2020-09-14 23:55:12&convert=minutes
+
+## Mode 3
+Return with result of complete weeks between datetimes.
+
+### Parameter requirement: 
+* firstDate=YYYY-MM-DD HH:MM:SS
+* secondDate=YYYY-MM-DD HH:MM:SS
+* (Optional) convert=OPTIONS (seoncds,minutes,hours,years)
+
+An example1 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firstDate=2020-08-13 12:00:33&secondDate=2020-10-24 23:55:12
+An example2 of calling this API in Mode 3: localhost:3000/api/DateTimeAPI/3?firstDate=2020-08-13 12:00:33&secondDate=2020-10-24 23:55:12&convert=years
+
+## Mode 4
+Return with result of days between datetimes.
+
+### Parameter requirement: 
+* firstDate=YYYY-MM-DD HH:MM:SS
+* firstTimeZone=TIMEZONE
+* secondDate=YYYY-MM-DD HH:MM:SS
+* secondTimeZone=TIMEZONE
+
+An example of calling this API in Mode 4: localhost:3000/api/DateTimeAPI/4?firstDate=2020-08-13 12:00:33&secondDate=2020-08-14 23:55:12&firstTimeZone=PDT&secondTimeZone=AEST
+
