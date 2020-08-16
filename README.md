@@ -46,10 +46,10 @@ php -S localhost:3000 -t public
 vendor/bin/phpunit
 ```
 
-# API Feature Description (How to use this API)
+# API Feature Description (How to use this API) 
 Url template to call this API is localhost:3000/api/DateTimeAPI/Modenumber?Parameters
 
-Modenumber is an int from 1 to 4. 
+Modenumber is an int from 1 to 4. Recommend to use Chrome as your test browser. The API has been tested on Chrome.
 
 ## Mode 1
 Return result of days between datetimes.
